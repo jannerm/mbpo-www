@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="author" content="Michael Janner">
+  <meta name="description" content="How can we most effectively use a predictive model for policy optimization in the face of compounding model errors?">
+  <meta name="keywords" content="Michael Janner, Sergey Levine, mbpo, model-based, reinforcement, learning">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+  <link rel="stylesheet" href="css/base.css">
+  <title>When to Trust Your Model: Model-Based Policy Optimization</title>
+  <!-- google search console -->
+  <meta name="google-site-verification" content="x5sEDA0ieF_mVCYDKxJ820Xi1O6n_XqI8UrNO97RvXw" />
+
+  <!-- twitter -->
+  <article class="post-content">
+    <meta name="twitter:title" content="Model-based policy optimization"/>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image" content="https://people.eecs.berkeley.edu/~janner/mbpo/blog/figures/teaser-01.png"/>
+  <article class="post-content">
+</head>
+
+<body>
+
+<div class="title">
+    <span class="line">When to Trust Your Model:</span>
+    <span class="line">Model-Based Policy Optimization</span>
+</div>
+<center>
+<span class="venue tap_targets"><a href="https://nips.cc/Conferences/2019">NeurIPS 2019</a></span>
+<span class="tag tap_targets">
+  <a href="https://arxiv.org/abs/1906.08253">Paper</a>&nbsp;
+  <a href="https://github.com/jannerm/mbpo">Code</a>&nbsp;
+  <a href="https://bair.berkeley.edu/blog/2019/12/12/mbpo/">Blog</a>&nbsp;
+  <a href="files/bib.txt">Bibtex</a>
+</span>
+</center>
+<br>
+
+<center>
+  <video width=100% height=auto autoplay playsinline muted>
+    <source src="images/mbpo_hopper.mp4" type="video/mp4">
+  </video>
+  <p>
+    How can we most effectively use a predictive model for policy optimization in the face of compounding model errors?
+  </p>
+</center>
+
+<div class="header">Abstract</div>
+<p>
+  Designing effective model-based reinforcement learning algorithms is difficult because the ease of data generation must be weighed against the bias of model-generated data. In this paper, we study the role of model usage in policy optimization both theoretically and empirically. We first formulate and analyze a model-based reinforcement learning algorithm with a guarantee of monotonic improvement at each step. In practice, this analysis is overly pessimistic and suggests that real off-policy data is always preferable to model-generated on-policy data, but we show that an empirical estimate of model generalization can be incorporated into such analysis to justify model usage. Motivated by this analysis, we then demonstrate that a simple procedure of using short model-generated rollouts branched from real data has the benefits of more complicated model-based algorithms without the usual pitfalls. In particular, this approach surpasses the sample efficiency of prior model-based methods, matches the asymptotic performance of the best model-free algorithms, and scales to horizons that cause other model-based methods to fail entirely.
+</p>
+
+<div class="header">Spotlight Talk</div>
+<br>
+<center>
+<div class="container">
+  <iframe src="https://www.youtube.com/embed/rdF7q8MipRs" frameborder="0" allowfullscreen></iframe>
+  <p>
+    If you cannot access YouTube, please <a href="images/mbpo_icml_2019.mp4">download our video here</a>.
+  </p>
+</div>
+</center>
+<br>
+<br>
+
+<!-- <center>
+
+<div class="container">
+  <iframe
+    src="https://www.youtube.com/embed/Xl_r28qDUEg"
+    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/Xl_r28qDUEg?autoplay=1><img src=images/youtube_minimal.webp alt='Gamma-models video'></a>"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    loading="lazy"
+    title="Gamma-models video"
+  ></iframe>
+</div>
+
+<p>
+  If you cannot access YouTube, please <a href="https://people.eecs.berkeley.edu/~janner/gamma-models/images/gamma_models_neurips_2020_video.mp4">download our video here</a>.
+</p>
+
+</center> -->
+
+<div class="citation">
+  When to Trust Your Model: Model-Based Policy Optimization
+</div>
+<div class="authors">
+  <a href="http://people.csail.mit.edu/janner/">Michael Janner</a>,
+  <a href="https://people.eecs.berkeley.edu/~justinjfu/">Justin Fu</a>,
+  <a href="http://marvinzhang.com/">Marvin Zhang</a>, and
+  <a href="https://people.eecs.berkeley.edu/~svlevine/">Sergey Levine</a>
+</div>
+<span class="venue"><a href="https://nips.cc/Conferences/2019">NeurIPS 2019</a></span>
+<span class="tag">
+  <a href="https://arxiv.org/abs/1906.08253">Paper</a>&nbsp;
+  <a href="https://github.com/jannerm/mbpo">Code</a>&nbsp;
+  <a href="https://bair.berkeley.edu/blog/2019/12/12/mbpo/">Blog</a>&nbsp;
+  <a href="files/bib.txt">Bibtex</a>
+</span>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+@inproceedings{janner2019mbpo,
+  author = {Michael Janner and Justin Fu and Marvin Zhang and Sergey Levine},
+  title = {When to Trust Your Model: Model-Based Policy Optimization},
+  booktitle = {Advances in Neural Information Processing Systems},
+  year = {2019}
+}
