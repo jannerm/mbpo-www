@@ -24,9 +24,6 @@ body {
   padding-top: 10px;
   text-align: center;
 }
-span.line {
-  display: inline-block;
-}
 .tap_targets {
   font-size: 1.2em;
 }
