@@ -52,7 +52,7 @@ a:hover {
 .container {
   position: relative;
   overflow: hidden;
-  width: 85%;
+  width: 70%;
   padding-top: 39.375%; /* 16:9 Aspect Ratio (9 / 16 = 0.5625 * iframe width) */
 }
 
